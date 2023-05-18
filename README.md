@@ -9,7 +9,7 @@
   - 리액트 네이티브를 처음 설치하는 명령어이다.
 - yarn add styled-components
   - 스타일드 컴포넌트를 위해 필요한 명령어이다.
-- yarn add react-native-pager-view react-native-safe-area-context react-native-tab-view
+- yarn add react-native-pager-view react-native-safe-area-context react-native-tab-view @react-navigation/native @react-navigation/material-top-tabs
   - 상단 탭을 통한 라우팅 기능을 제공하는 라이브러리들이다.
 
 ## 앞으로 하고싶은 것들
