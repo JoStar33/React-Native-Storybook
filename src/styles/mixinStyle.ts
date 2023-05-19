@@ -8,8 +8,8 @@ const CenterView = styled.View`
 
 const Card = styled(CenterView)`
   flex-direction: column;
-  padding: 1vw;
-  width: 45vw;
+  padding: 1%;
+  width: 100%;
   border-radius: 13px;
   cursor: pointer;
   shadow-color: #000;
