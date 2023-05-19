@@ -1,6 +1,6 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import MovieScreen from 'screens/MovieScreen/MovieScreen';
 import FeedScreen from './screens/FeedScreen';
-import NotificationsScreen from './screens/NotificationsScreen';
 import ProfileScreen from './screens/ProfileScreen';
 const Tab = createMaterialTopTabNavigator();
 const MainScreen = () => {
@@ -19,9 +19,9 @@ const MainScreen = () => {
         options={{ tabBarLabel: 'Home' }}
       />
       <Tab.Screen
-        name="Notifications"
-        component={NotificationsScreen}
-        options={{ tabBarLabel: 'Updates' }}
+        name="MovieShow"
+        component={MovieScreen}
+        options={{ tabBarLabel: 'Movies' }}
       />
       <Tab.Screen
         name="Profile"
