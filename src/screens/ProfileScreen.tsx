@@ -1,5 +1,5 @@
 import { Text, View } from 'react-native';
-import CommonButton from '../components/buttons/CommonButton/CommonButton';
+import CommonButton from '../components/atoms/buttons/CommonButton/CommonButton';
 
 const ProfileScreen = () => {
   return (
