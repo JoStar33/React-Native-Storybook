@@ -1,3 +1,4 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 const queryClient = new QueryClient();
@@ -15,9 +16,11 @@ export const decorators = [(Story) => {
     document.head.appendChild(style);
   }, []);
   return (
-    <QueryClientProvider client={queryClient}>
-      <Story />
-    </QueryClientProvider>
+    <NavigationContainer>
+      <QueryClientProvider client={queryClient}>
+        <Story />
+      </QueryClientProvider>
+    </NavigationContainer>
   )
 }];
 
