@@ -1,34 +1,24 @@
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import MovieScreen from 'screens/MovieScreen/MovieScreen';
-import FeedScreen from './screens/FeedScreen';
-import ProfileScreen from './screens/ProfileScreen';
+import { createStackNavigator } from '@react-navigation/stack';
+import TopTabNavigator from 'routers/TopTabNavigator';
+import MovieDetailScreen from 'screens/MovieDetailScreen/MovieDetailScreen';
 const Tab = createMaterialTopTabNavigator();
+const Stack = createStackNavigator();
+
 const MainScreen = () => {
   return (
-    <Tab.Navigator
-      initialRouteName="Feed"
-      screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
-        tabBarLabelStyle: { fontSize: 12 },
-        tabBarStyle: { backgroundColor: 'powderblue' },
-      }}
+    <Stack.Navigator
+      initialRouteName="Home"
     >
-      <Tab.Screen
-        name="Feed"
-        component={FeedScreen}
-        options={{ tabBarLabel: 'Home' }}
+      <Stack.Screen
+        name="TopTabNavigator"
+        component={TopTabNavigator}
       />
-      <Tab.Screen
-        name="MovieShow"
-        component={MovieScreen}
-        options={{ tabBarLabel: 'Movies' }}
+      <Stack.Screen
+        name="MovieDetailScreen"
+        component={MovieDetailScreen}
       />
-      <Tab.Screen
-        name="Profile"
-        component={ProfileScreen}
-        options={{ tabBarLabel: 'Profile' }}
-      />
-    </Tab.Navigator>
+    </Stack.Navigator>
   );
 }
 
