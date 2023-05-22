@@ -25,6 +25,15 @@ export const movieCardStyles = StyleSheet.create({
       android: {
         elevation: 20,
       },
+      web: {
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 10,
+          height: 10,
+        },
+        shadowOpacity: 0.5,
+        shadowRadius: 10,
+      }
     }),
   },
   image: {
