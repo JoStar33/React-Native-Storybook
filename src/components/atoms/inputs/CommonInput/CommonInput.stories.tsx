@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import CommonInput from './CommonInput';
 
 export default {
-  title: 'components/CommonInput',
+  title: '컴포넌트/아톰/인풋/CommonInput',
   component: CommonInput,
 } as ComponentMeta<typeof CommonInput>;
 

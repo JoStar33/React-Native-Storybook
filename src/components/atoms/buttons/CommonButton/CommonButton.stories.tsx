@@ -4,7 +4,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import CommonButton from './CommonButton';
 
 export default {
-  title: 'components/CommonButton',
+  title: '컴포넌트/아톰/버튼/CommonButton',
   component: CommonButton,
 } as ComponentMeta<typeof CommonButton>;
 

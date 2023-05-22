@@ -3,7 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import MovieCard from './MovieCard';
 
 export default {
-  title: 'components/MovieCard',
+  title: '컴포넌트/분자/카드/MovieCard',
   component: MovieCard,
 } as ComponentMeta<typeof MovieCard>;
 
