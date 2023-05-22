@@ -1,5 +1,5 @@
-import { Text } from "react-native";
-import { ButtonContainer } from "./CommonButton.style";
+import { Text, TouchableOpacity } from "react-native";
+import { commonButtonStyles } from "./CommonButton.style";
 
 interface Props {
   label: string;
@@ -8,9 +8,9 @@ interface Props {
 
 const CommonButton = ({label, handleClick}: Props) => {
   return (
-    <ButtonContainer onPress={handleClick}>
+    <TouchableOpacity style={commonButtonStyles.container}>
       <Text>{label}</Text>
-    </ButtonContainer>
+    </TouchableOpacity>
   );
 };
 

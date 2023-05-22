@@ -1,13 +1,14 @@
-import styled from "styled-components/native";
+import { StyleSheet } from 'react-native';
 
-const ButtonContainer = styled.TouchableOpacity`
-  height: 50px;
-  border-radius: 40px;
-  width: 100%;
-  border: 2px solid black;
-  justify-content: center;
-  align-items: center;
-`;
-
-export { ButtonContainer };
-
+export const commonButtonStyles = StyleSheet.create({
+  container: {
+    height: 50,
+    width: 100,
+    borderRadius: 40,
+    justifyContent: 'center',
+    alignItems: 'center',
+    border: 2,
+    borderColor: 'black',
+    backgroundColor: 'white'
+  }
+});
