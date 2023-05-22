@@ -27,6 +27,14 @@
 - yarn add @react-navigation/stack react-native-gesture-handler
   - 리액트 네이티브 라우팅을 스택의 형태로 수행할 수 있게 해주는 라이브러리들.
 
+- yarn add react-native-vector-icons
+  - 리액트 네이티브에서 범용적으로 사용되는 아이콘.
+
+- yarn add @react-native-async-storage/async-storage
+  - 리액트 네이티브 환경에서 localStorage역할을 수행하는 asyncStorage.
+
+- yarn add react-query
+  - 자세한 설명은 생략한다.
 
 ## 스타일드 컴포넌트를 손절친 이유
 스타일드 컴포넌트를 사용하다가 뜯어냈다. 이유는 스타일드 컴포넌트를 사용하면 스타일 호환이 제대로 이루어지지 않으며 styleSheet를 사용했을때도 스타일드 컴포넌트처럼 css in js의 형태로 코드를 짜는게 가능하다는 점이다. 물론 컴포넌트 네이밍을 못한다는 점은 아쉽지만 호환을 설정하는 과정이 너무 까다롭기에 손절을 결정.
