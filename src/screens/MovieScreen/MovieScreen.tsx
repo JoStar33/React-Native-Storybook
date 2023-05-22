@@ -20,9 +20,7 @@ const MovieScreen = () => {
         renderItem={(movie) => (
           <MovieCard
             key={movie.item.id}
-            title={movie.item.title_english}
-            description={movie.item.description_full}
-            image={movie.item.medium_cover_image}
+            item={movie.item}
           />
         )}
       />
