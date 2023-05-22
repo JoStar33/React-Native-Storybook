@@ -7,7 +7,7 @@ export const commonButtonStyles = StyleSheet.create({
     borderRadius: 40,
     justifyContent: 'center',
     alignItems: 'center',
-    border: 2,
+    borderWidth: 2,
     borderColor: 'black',
     backgroundColor: 'white'
   }

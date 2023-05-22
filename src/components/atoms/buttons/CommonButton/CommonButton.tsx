@@ -8,7 +8,7 @@ interface Props {
 
 const CommonButton = ({label, handleClick}: Props) => {
   return (
-    <TouchableOpacity style={commonButtonStyles.container}>
+    <TouchableOpacity style={commonButtonStyles.container} onPress={handleClick}>
       <Text>{label}</Text>
     </TouchableOpacity>
   );

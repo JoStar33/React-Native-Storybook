@@ -1,10 +1,9 @@
-import { InputContainer, NormalInput } from "./CommonInput.style";
+import { TextInput } from "react-native";
+import { commonInputStyles } from "./CommonInput.style";
 
 const CommonInput = () => {
   return (
-    <InputContainer>
-      <NormalInput/>
-    </InputContainer>
+    <TextInput style={commonInputStyles.input}/>
   );
 };
 
