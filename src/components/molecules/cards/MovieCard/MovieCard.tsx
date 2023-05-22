@@ -1,19 +1,18 @@
-import { Image, Text, View } from 'react-native';
+import { Image, Text, TouchableOpacity } from 'react-native';
+import { Movie } from 'types/movie';
 import { movieCardStyles } from './MovieCard.style';
 
 interface Props {
-  title: string;
-  description: string;
-  image: string;
+  item: Movie;
 }
 
-const MovieCard = ({title, description, image}: Props) => {
+const MovieCard = ({item}: Props) => {
   return (
-    <View style={movieCardStyles.container}>
-      <Image style={movieCardStyles.image} source={{uri: image}}/>
-      <Text style={movieCardStyles.title}>{title}</Text>
-      <Text style={movieCardStyles.description}>{description}</Text>
-    </View>
+    <TouchableOpacity style={movieCardStyles.container}>
+      <Image style={movieCardStyles.image} source={{uri: item.medium_cover_image}}/>
+      <Text style={movieCardStyles.title}>{item.title}</Text>
+      <Text style={movieCardStyles.description}>{item.description_full}</Text>
+    </TouchableOpacity>
   );
 };
 
