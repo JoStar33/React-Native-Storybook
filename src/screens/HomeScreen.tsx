@@ -1,6 +1,6 @@
 import { Text, View } from 'react-native';
 
-const FeedScreen = () => {
+const HomeScreen = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
       <Text>Feed!</Text>
@@ -8,4 +8,4 @@ const FeedScreen = () => {
   );
 }
 
-export default FeedScreen;
+export default HomeScreen;
