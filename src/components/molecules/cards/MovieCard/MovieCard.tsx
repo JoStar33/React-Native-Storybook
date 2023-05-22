@@ -1,4 +1,4 @@
-import { useNavigation } from "@react-navigation/native";
+import { NavigationProp, useNavigation } from "@react-navigation/native";
 import { Menus } from "constants/menus";
 import { Image, Text, TouchableOpacity } from "react-native";
 import { Movie } from "types/movie";
@@ -8,12 +8,16 @@ interface Props {
   item: Movie;
 }
 
+type RootParamList = {
+  MovieDetailScreen: { movie: Movie } | undefined;
+};
+
 const MovieCard = ({ item }: Props) => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<RootParamList>>();
   const handleClick = () => {
-    navigation.navigate(Menus.MovieDetailScreen as never, {
+    navigation.navigate(Menus.MovieDetailScreen, {
       movie: item
-    } as never);
+    });
   };
   return (
     <TouchableOpacity style={movieCardStyles.container} onPress={handleClick}>
