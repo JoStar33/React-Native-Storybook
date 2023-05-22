@@ -1,8 +1,6 @@
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import TopTabNavigator from 'routers/TopTabNavigator';
 import MovieDetailScreen from 'screens/MovieDetailScreen/MovieDetailScreen';
-const Tab = createMaterialTopTabNavigator();
 const Stack = createStackNavigator();
 
 const MainScreen = () => {
