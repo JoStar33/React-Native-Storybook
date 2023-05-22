@@ -1,4 +1,5 @@
-import { MovieCardContainer, MovieDescription, MovieImage, MovieTitle } from "./MovieCard.style";
+import { Image, Text, View } from 'react-native';
+import { movieCardStyles } from './MovieCard.style';
 
 interface Props {
   title: string;
@@ -8,11 +9,11 @@ interface Props {
 
 const MovieCard = ({title, description, image}: Props) => {
   return (
-    <MovieCardContainer>
-      <MovieImage source={{uri: image}}/>
-      <MovieTitle>{title}</MovieTitle>
-      <MovieDescription>{description}</MovieDescription>
-    </MovieCardContainer>
+    <View style={movieCardStyles.container}>
+      <Image style={movieCardStyles.image} source={{uri: image}}/>
+      <Text style={movieCardStyles.title}>{title}</Text>
+      <Text style={movieCardStyles.description}>{description}</Text>
+    </View>
   );
 };
 

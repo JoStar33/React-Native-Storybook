@@ -1,15 +1,9 @@
-import styled from "styled-components/native";
+import { StyleSheet } from 'react-native';
 
-
-const MovieCardContainer = styled.View`
-  width: 100%;
-  border-radius: 13px;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-`;
-
-export { MovieCardContainer };
-
+export const movieScreenStyles = StyleSheet.create({
+  container: {
+    width: '100%',
+    flexDirection: 'row',
+    flexWrap: 'wrap'
+  },
+});

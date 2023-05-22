@@ -1,23 +1,29 @@
-import styled from "styled-components/native";
-import { Card } from "styles/mixinStyle";
+import { StyleSheet } from 'react-native';
 
-const MovieCardContainer = styled(Card)`
-  overflow: hidden;
-  width: 100%;
-`;
-
-const MovieImage = styled.Image`
-  width: 90%;
-  height: 90%;
-  border-radius: 15px;
-`;
-
-const MovieTitle = styled.Text`
-  font-size: 20px;
-`;
-
-const MovieDescription = styled.Text`
-`;
-
-export { MovieCardContainer, MovieImage, MovieTitle, MovieDescription };
-
+export const movieCardStyles = StyleSheet.create({
+  container: {
+    padding: '3%',
+    flex: 1,
+    margin: '4%',
+    width: '40%',
+    height: 200,
+    backgroundColor: 'white',
+    borderRadius: 8,
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+    overflow: 'hidden'
+  },
+  image: {
+    width: 120,
+    height: 120,
+  },
+  title: {
+    fontSize: 20,
+    color: 'black' 
+  },
+  description: { 
+    height: 50,
+    color: 'black' 
+  },
+});

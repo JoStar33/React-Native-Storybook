@@ -1,17 +1,13 @@
 import MovieCard from "components/molecules/cards/MovieCard/MovieCard";
 import { useMovieQuery } from "hooks/movies/useMovieQuery";
-import { ActivityIndicator, FlatList } from "react-native";
-import { MovieCardContainer } from "./MovieScreen.style";
+import { ActivityIndicator, FlatList, View } from "react-native";
 
 const MovieScreen = () => {
   const { data, fetchNextPage, isLoading, hasNextPage } = useMovieQuery();
   return (
-    <MovieCardContainer>
+    <View>
       <FlatList
-        style={{
-          flex: 1,
-          width: "100%"
-        }}
+        numColumns={2}
         data={data?.pages.map((page) => page.movies).flat()}
         onEndReached={() => {
           if(hasNextPage) {
@@ -30,7 +26,7 @@ const MovieScreen = () => {
           />
         )}
       />
-    </MovieCardContainer>
+    </View>
   );
 };
 
