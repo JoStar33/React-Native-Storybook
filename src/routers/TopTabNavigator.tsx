@@ -2,6 +2,7 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import { Menus } from "constants/menus";
 import MovieRowListScreen from "screens/MovieRowListScreen/MovieRowListScreen";
 import MovieScreen from "screens/MovieScreen/MovieScreen";
+import SwipeListScreen from "screens/SwipeListScreen/SwipeListScreen";
 import HomeScreen from "../screens/HomeScreen";
 const Tab = createMaterialTopTabNavigator();
 
@@ -29,6 +30,11 @@ const TopTabNavigator = () => {
         name={Menus.MovieRowList}
         component={MovieRowListScreen}
         options={{ tabBarLabel: Menus.MovieRowList }}
+      />
+      <Tab.Screen
+        name={Menus.SwipeList}
+        component={SwipeListScreen}
+        options={{ tabBarLabel: Menus.SwipeList }}
       />
     </Tab.Navigator>
   );
