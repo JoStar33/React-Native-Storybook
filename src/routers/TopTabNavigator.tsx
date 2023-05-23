@@ -4,6 +4,7 @@ import MovieRowListScreen from "screens/MovieRowListScreen/MovieRowListScreen";
 import MovieScreen from "screens/MovieScreen/MovieScreen";
 import SwipeListScreen from "screens/SwipeListScreen/SwipeListScreen";
 import HomeScreen from "../screens/HomeScreen";
+import DragableListScreen from "screens/DragableListScreen/DragableListScreen";
 const Tab = createMaterialTopTabNavigator();
 
 const TopTabNavigator = () => {
@@ -35,6 +36,11 @@ const TopTabNavigator = () => {
         name={Menus.SwipeList}
         component={SwipeListScreen}
         options={{ tabBarLabel: Menus.SwipeList }}
+      />
+      <Tab.Screen
+        name={Menus.DragableList}
+        component={DragableListScreen}
+        options={{ tabBarLabel: Menus.DragableList }}
       />
     </Tab.Navigator>
   );

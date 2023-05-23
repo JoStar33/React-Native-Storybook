@@ -4,6 +4,7 @@ enum Menus {
   MovieRowList = "MovieRowList",
   Movies = "Movies",
   Profile = "Profile",
+  DragableList = "DragableList",
   Home = "Home"
 }
 
