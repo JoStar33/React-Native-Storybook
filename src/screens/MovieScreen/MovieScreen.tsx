@@ -11,18 +11,15 @@ const MovieScreen = () => {
         numColumns={2}
         data={data?.pages.map((page) => page.movies).flat()}
         onEndReached={() => {
-          if(hasNextPage) {
+          if (hasNextPage) {
             fetchNextPage();
           }
         }}
         onEndReachedThreshold={0.5}
         keyExtractor={(item, index) => String(item.id)}
-        ListFooterComponent={isFetching ? <MovieScreenSkeleton/> : undefined}
+        ListFooterComponent={isFetching ? <MovieScreenSkeleton /> : undefined}
         renderItem={(movie) => (
-          <MovieCard
-            key={movie.item.id}
-            item={movie.item}
-          />
+          <MovieCard key={movie.item.id} item={movie.item} />
         )}
       />
     </View>

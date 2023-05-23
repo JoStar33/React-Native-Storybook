@@ -34,21 +34,21 @@ export const movieCardSkeletonStyles = StyleSheet.create({
         },
         shadowOpacity: 0.5,
         shadowRadius: 10,
-      }
+      },
     }),
   },
   image: {
     width: 120,
     height: 120,
-    marginBottom: 2
+    marginBottom: 2,
   },
   title: {
     width: 120,
     height: 20,
-    marginBottom: 2
+    marginBottom: 2,
   },
   description: {
     width: 120,
-    height: 30
+    height: 30,
   },
 });

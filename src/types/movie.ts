@@ -2,7 +2,7 @@ interface GettedMovieData {
   movie_count: number;
   limit: number;
   page_number: number;
-  movies: Movie[]
+  movies: Movie[];
 }
 
 interface Movie {
@@ -32,7 +32,7 @@ interface Movie {
   torrents: object[];
   date_uploaded: string;
   date_uploaded_unix: number;
-};
+}
 
 export type { GettedMovieData, Movie };
 

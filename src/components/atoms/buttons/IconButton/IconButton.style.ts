@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const iconButtonStyles = StyleSheet.create({
   container: {
@@ -6,11 +6,11 @@ export const iconButtonStyles = StyleSheet.create({
     height: 50,
     padding: 10,
     borderRadius: 40,
-    justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
     borderWidth: 2,
-    borderColor: 'black',
-    backgroundColor: 'white'
-  }
+    borderColor: "black",
+    backgroundColor: "white",
+  },
 });

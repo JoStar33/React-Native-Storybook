@@ -31,9 +31,9 @@ const MultiValidateForm = ({ formModel, actionSubmit, buttonText }: Props) => {
   } = useForm();
   return (
     <View style={multiValidateFormStyles.container}>
-      {
-        formModel.map(model => <FormValidateInput model={model} errors={errors} control={control}/>)
-      }
+      {formModel.map((model) => (
+        <FormValidateInput model={model} errors={errors} control={control} />
+      ))}
       <ColorButton
         label={buttonText}
         color={"skyblue"}

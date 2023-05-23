@@ -1,8 +1,8 @@
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import { Menus } from 'constants/menus';
-import MovieScreen from 'screens/MovieScreen/MovieScreen';
-import HomeScreen from '../screens/HomeScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { Menus } from "constants/menus";
+import MovieScreen from "screens/MovieScreen/MovieScreen";
+import HomeScreen from "../screens/HomeScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 const Tab = createMaterialTopTabNavigator();
 
 const TopTabNavigator = () => {
@@ -10,9 +10,9 @@ const TopTabNavigator = () => {
     <Tab.Navigator
       initialRouteName={Menus.Home}
       screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
+        tabBarActiveTintColor: "#e91e63",
         tabBarLabelStyle: { fontSize: 12 },
-        tabBarStyle: { backgroundColor: 'powderblue' },
+        tabBarStyle: { backgroundColor: "powderblue" },
       }}
     >
       <Tab.Screen
@@ -32,6 +32,6 @@ const TopTabNavigator = () => {
       />
     </Tab.Navigator>
   );
-}
+};
 
 export default TopTabNavigator;

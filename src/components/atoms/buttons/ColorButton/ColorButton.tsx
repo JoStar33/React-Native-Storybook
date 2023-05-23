@@ -9,15 +9,14 @@ interface Props {
 
 const ColorButton = ({ label, color, handleClick }: Props) => {
   return (
-    <TouchableOpacity style={{
-      ...colorButtonStyles.container,
-      backgroundColor: color
-    }} onPress={handleClick}>
-      <Text style={colorButtonStyles.labelText}>
-        {
-        label
-        }
-      </Text>
+    <TouchableOpacity
+      style={{
+        ...colorButtonStyles.container,
+        backgroundColor: color,
+      }}
+      onPress={handleClick}
+    >
+      <Text style={colorButtonStyles.labelText}>{label}</Text>
     </TouchableOpacity>
   );
 };

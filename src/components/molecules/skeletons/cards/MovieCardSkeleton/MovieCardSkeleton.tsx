@@ -1,6 +1,6 @@
-import { View } from 'react-native';
-import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
-import { movieCardSkeletonStyles } from './MovieCardSkeleton.style';
+import { View } from "react-native";
+import SkeletonPlaceholder from "react-native-skeleton-placeholder";
+import { movieCardSkeletonStyles } from "./MovieCardSkeleton.style";
 
 const MovieCardSkeleton = () => {
   return (

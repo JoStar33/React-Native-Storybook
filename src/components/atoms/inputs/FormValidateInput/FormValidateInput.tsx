@@ -1,9 +1,4 @@
-import {
-  Control,
-  Controller,
-  FieldErrors,
-  FieldValues
-} from "react-hook-form";
+import { Control, Controller, FieldErrors, FieldValues } from "react-hook-form";
 import { Text, TextInput, View } from "react-native";
 import { FormValidateModel } from "types/apps/form";
 import { formValidateInputStyles } from "./FormValidateInput.style";
@@ -21,7 +16,7 @@ const FormValidateInput = ({ model, errors, control }: Props) => {
       name={model.name}
       rules={{
         required: model.required,
-        validate: value => model.validate(value)
+        validate: (value) => model.validate(value),
       }}
       render={({ field: { onChange, value } }) => (
         <>

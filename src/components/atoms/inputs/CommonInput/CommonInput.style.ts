@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const commonInputStyles = StyleSheet.create({
   input: {
@@ -7,6 +7,6 @@ export const commonInputStyles = StyleSheet.create({
     padding: 15,
     height: 10,
     borderRadius: 10,
-    borderWidth: 2
-  }
+    borderWidth: 2,
+  },
 });

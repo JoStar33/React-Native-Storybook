@@ -1,10 +1,10 @@
 // stories/CommonInput.stories.tsx
-import { ComponentMeta, ComponentStory } from '@storybook/react';
+import { ComponentMeta, ComponentStory } from "@storybook/react";
 
-import CommonInput from './CommonInput';
+import CommonInput from "./CommonInput";
 
 export default {
-  title: '컴포넌트/아톰/인풋/CommonInput',
+  title: "컴포넌트/아톰/인풋/CommonInput",
   component: CommonInput,
 } as ComponentMeta<typeof CommonInput>;
 

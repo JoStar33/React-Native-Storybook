@@ -1,10 +1,10 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export const movieScreenSkeletonStyles = StyleSheet.create({
   container: {
     height: 500,
-    flexWrap: 'wrap',
+    flexWrap: "wrap",
     flex: 1,
-    flexDirection:'row',
+    flexDirection: "row",
   },
 });
