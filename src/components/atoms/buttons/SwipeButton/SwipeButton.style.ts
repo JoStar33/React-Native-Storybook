@@ -11,4 +11,3 @@ const swipeButtonStyles = StyleSheet.create({
 });
 
 export { swipeButtonStyles };
-;
