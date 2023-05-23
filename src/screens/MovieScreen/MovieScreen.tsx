@@ -1,9 +1,10 @@
 import MovieCard from "components/molecules/cards/MovieCard/MovieCard";
+import MovieScreenSkeleton from "components/organization/skeletons/MovieScreenSkeleton/MovieScreenSkeleton";
 import { useMovieQuery } from "hooks/movies/useMovieQuery";
-import { ActivityIndicator, FlatList, View } from "react-native";
+import { FlatList, View } from "react-native";
 
 const MovieScreen = () => {
-  const { data, fetchNextPage, isLoading, hasNextPage } = useMovieQuery();
+  const { data, fetchNextPage, isFetching, hasNextPage } = useMovieQuery();
   return (
     <View>
       <FlatList
@@ -16,7 +17,7 @@ const MovieScreen = () => {
         }}
         onEndReachedThreshold={0.5}
         keyExtractor={(item, index) => String(item.id)}
-        ListFooterComponent={isLoading ? <ActivityIndicator /> : undefined}
+        ListFooterComponent={isFetching ? <MovieScreenSkeleton/> : undefined}
         renderItem={(movie) => (
           <MovieCard
             key={movie.item.id}
