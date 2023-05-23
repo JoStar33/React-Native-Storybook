@@ -1,8 +1,8 @@
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 import { Menus } from "constants/menus";
+import MovieRowListScreen from "screens/MovieRowListScreen/MovieRowListScreen";
 import MovieScreen from "screens/MovieScreen/MovieScreen";
 import HomeScreen from "../screens/HomeScreen";
-import ProfileScreen from "../screens/ProfileScreen";
 const Tab = createMaterialTopTabNavigator();
 
 const TopTabNavigator = () => {
@@ -26,9 +26,9 @@ const TopTabNavigator = () => {
         options={{ tabBarLabel: Menus.Movies }}
       />
       <Tab.Screen
-        name={Menus.Profile}
-        component={ProfileScreen}
-        options={{ tabBarLabel: Menus.Profile }}
+        name={Menus.MovieRowList}
+        component={MovieRowListScreen}
+        options={{ tabBarLabel: Menus.MovieRowList }}
       />
     </Tab.Navigator>
   );

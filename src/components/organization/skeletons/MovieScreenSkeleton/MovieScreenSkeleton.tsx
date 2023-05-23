@@ -5,10 +5,9 @@ import { movieScreenSkeletonStyles } from "./MovieScreenSkeleton.style";
 const MovieScreenSkeleton = () => {
   return (
     <View style={movieScreenSkeletonStyles.container}>
-      {new Array(3).fill(1).map((_, index) => (
+      {new Array(4).fill(1).map((_, index) => (
         <MovieCardSkeleton key={index} />
       ))}
-      <MovieCardSkeleton />
     </View>
   );
 };
