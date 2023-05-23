@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native";
+import { mixinStyle } from "styles/mixinStyle";
 
 export const formValidateInputStyles = StyleSheet.create({
   inputContainer: {
@@ -6,14 +7,10 @@ export const formValidateInputStyles = StyleSheet.create({
     width: 400,
   },
   input: {
-    fontSize: 20,
-    borderRadius: 5,
-    borderWidth: 2,
-    borderColor: "black",
+    ...mixinStyle.input
   },
   inputTitle: {
-    fontSize: 18,
-    fontWeight: "800",
+    ...mixinStyle.inputTitle
   },
   errorText: {
     color: "red",

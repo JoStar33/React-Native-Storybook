@@ -33,7 +33,17 @@ const mixinStyle = StyleSheet.create({
         shadowRadius: 10,
       },
     }),
-  }
+  },
+  input: {
+    fontSize: 20,
+    borderRadius: 5,
+    borderWidth: 2,
+    borderColor: "black",
+  },
+  inputTitle: {
+    fontSize: 18,
+    fontWeight: "800",
+  },
 });
 
 export { mixinStyle };

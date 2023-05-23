@@ -19,28 +19,26 @@ const FormValidateInput = ({ model, errors, control }: Props) => {
         validate: (value) => model.validate(value),
       }}
       render={({ field: { onChange, value } }) => (
-        <>
-          <View style={formValidateInputStyles.inputContainer}>
-            <View>
-              <Text style={formValidateInputStyles.inputTitle}>
-                {model.label}
-              </Text>
-            </View>
-            <TextInput
-              id={model.name}
-              secureTextEntry={model.type === "password"}
-              placeholder={model.name}
-              style={formValidateInputStyles.input}
-              value={value}
-              onChangeText={(value) => onChange(value)}
-            />
-            {errors[model.name] ? (
-              <Text style={formValidateInputStyles.errorText}>
-                {String(errors[model.name]?.message)}
-              </Text>
-            ) : null}
+        <View style={formValidateInputStyles.inputContainer}>
+          <View>
+            <Text style={formValidateInputStyles.inputTitle}>
+              {model.label}
+            </Text>
           </View>
-        </>
+          <TextInput
+            id={model.name}
+            secureTextEntry={model.type === "password"}
+            placeholder={model.name}
+            style={formValidateInputStyles.input}
+            value={value}
+            onChangeText={(value) => onChange(value)}
+          />
+          {errors[model.name] ? (
+            <Text style={formValidateInputStyles.errorText}>
+              {String(errors[model.name]?.message)}
+            </Text>
+          ) : null}
+        </View>
       )}
     ></Controller>
   );
