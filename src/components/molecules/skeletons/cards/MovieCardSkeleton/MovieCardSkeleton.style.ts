@@ -5,6 +5,7 @@ export const movieCardSkeletonStyles = StyleSheet.create({
     padding: "3%",
     flex: 1,
     margin: "4%",
+    //최소길이를 정해줘서 정렬이 안되는 이슈 해결함.
     minWidth: "40%",
     height: 200,
     backgroundColor: "white",
