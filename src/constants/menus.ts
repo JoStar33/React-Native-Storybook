@@ -8,7 +8,8 @@ enum BottomMenus {
 
 enum DrawerMenus {
   DrawerHome = "DrawerHome",
-  NotificationScreen = "NotificationScreen"
+  NotificationScreen = "NotificationScreen",
+  SignScreen = "SignScreen"
 }
 
 enum StackMenus {
