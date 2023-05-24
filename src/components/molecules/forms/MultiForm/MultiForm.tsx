@@ -18,8 +18,8 @@ const MultiForm = ({ formModel, actionSubmit, buttonText }: Props) => {
   } = useForm();
   return (
     <View style={multiFormStyles.container}>
-      {formModel.map((model) => (
-        <FormInput model={model} control={control} />
+      {formModel.map((model, _id) => (
+        <FormInput key={_id} model={model} control={control} />
       ))}
       <ColorButton
         label={buttonText}

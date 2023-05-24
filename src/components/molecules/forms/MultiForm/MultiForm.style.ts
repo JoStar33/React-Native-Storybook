@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
+import { vw } from "rxn-units";
 
 export const multiFormStyles = StyleSheet.create({
   container: {
-    width: 500,
+    width: vw(90),
     padding: 20,
     justifyContent: "center",
     alignItems: "center",
