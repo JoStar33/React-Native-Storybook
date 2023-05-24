@@ -12,6 +12,7 @@ enum DrawerMenus {
 }
 
 enum StackMenus {
+  DrawerNavigator = "DrawerNavigator",
   MovieDetailScreen = "MovieDetailScreen",
 };
 

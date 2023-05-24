@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import SideBar from "components/layouts/sidebar/SideBar";
-import { sideMenu } from "datas/menus";
+import { sideMenu } from "datas/menus/sideMenus";
 import { userInfo } from "datas/users";
 
 const Drawer = createDrawerNavigator();

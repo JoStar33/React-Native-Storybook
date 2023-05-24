@@ -1,6 +1,6 @@
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { BottomMenus } from "constants/menus";
-import { bottomTabMenu } from "datas/menus";
+import { bottomTabMenu } from "datas/menus/bottonTabMenus";
 //const Tab = createMaterialTopTabNavigator();
 // screenOptions={{
 //   tabBarActiveTintColor: "#e91e63",
