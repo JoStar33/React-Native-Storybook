@@ -1,23 +1,20 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import SideBar from "components/layouts/sidebar/SideBar";
 import { sideMenu } from "datas/menus";
+import { userInfo } from "datas/users";
 
 const Drawer = createDrawerNavigator();
 
 const DrawerNavigator = () => {
   return (
     <Drawer.Navigator
+      screenOptions={{
+        headerTitleAlign: "center"
+      }}
       drawerContent={(props) => (
         <SideBar
           props={props}
-          userInfo={{
-            profile_img:
-              "https://api.adorable.io/avatars/50/abott@adorable.png",
-            sns_id: "@jostar33",
-            name: "Jose",
-            follower: 20,
-            following: 20,
-          }}
+          userInfo={userInfo}
           sideMenu={sideMenu}
         />
       )}
