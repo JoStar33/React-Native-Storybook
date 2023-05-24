@@ -9,24 +9,6 @@ const MainScreen = () => {
       screenOptions={{
         headerShown: false,
       }}
-      // screenOptions={{
-      //   headerTitleAlign: "center",
-      //   headerLeft: ({ onPress }) => (
-      //     <TouchableOpacity onPress={onPress}>
-      //       <Text>Left</Text>
-      //     </TouchableOpacity>
-      //   ),
-      //   headerTitle: ({ children }) => (
-      //     <View>
-      //       <Text>{children}</Text>
-      //     </View>
-      //   ),
-      //   headerRight: () => (
-      //     <View>
-      //       <Text>Right</Text>
-      //     </View>
-      //   ),
-      // }}
     >
       {/* 사이드 네비게이터 */}
       <Stack.Screen name="드로워" component={DrawerNavigator} />
