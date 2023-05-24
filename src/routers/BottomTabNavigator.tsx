@@ -1,26 +1,29 @@
-import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { Menus } from "constants/menus";
+import DragableListScreen from "screens/DragableListScreen/DragableListScreen";
 import MovieRowListScreen from "screens/MovieRowListScreen/MovieRowListScreen";
 import MovieScreen from "screens/MovieScreen/MovieScreen";
 import SwipeListScreen from "screens/SwipeListScreen/SwipeListScreen";
-import HomeScreen from "../screens/HomeScreen";
-import DragableListScreen from "screens/DragableListScreen/DragableListScreen";
-const Tab = createMaterialTopTabNavigator();
+import HomeScreen from "../screens/MainScreen";
+//const Tab = createMaterialTopTabNavigator();
+// screenOptions={{
+//   tabBarActiveTintColor: "#e91e63",
+//   tabBarLabelStyle: { fontSize: 12 },
+//   tabBarStyle: { backgroundColor: "powderblue" },
+// }}
+const Tab = createMaterialBottomTabNavigator();
 
-const TopTabNavigator = () => {
+const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
-      initialRouteName={Menus.Home}
-      screenOptions={{
-        tabBarActiveTintColor: "#e91e63",
-        tabBarLabelStyle: { fontSize: 12 },
-        tabBarStyle: { backgroundColor: "powderblue" },
-      }}
+      initialRouteName={Menus.MainScreen}
+      activeColor="#e91e63"
+      barStyle={{ backgroundColor: 'tomato' }}
     >
       <Tab.Screen
-        name={Menus.Home}
+        name={Menus.MainScreen}
         component={HomeScreen}
-        options={{ tabBarLabel: Menus.Home }}
+        options={{ tabBarLabel: Menus.MainScreen }}
       />
       <Tab.Screen
         name={Menus.Movies}
@@ -46,4 +49,4 @@ const TopTabNavigator = () => {
   );
 };
 
-export default TopTabNavigator;
+export default BottomTabNavigator;
