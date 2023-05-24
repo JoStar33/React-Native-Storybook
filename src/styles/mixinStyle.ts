@@ -44,6 +44,34 @@ const mixinStyle = StyleSheet.create({
     fontSize: 18,
     fontWeight: "800",
   },
+  dialog: {
+    margin: 20,
+    backgroundColor: 'white',
+    borderRadius: 20,
+    padding: 35,
+    alignItems: 'center',
+    ...Platform.select({
+      ios: {
+        shadowOffset: {
+          width: 0,
+          height:2
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+      },
+      android: {
+        elevation: 10,
+      },
+      web: {
+        shadowOffset: {
+          width: 0,
+          height:2
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+      },
+    })
+  }
 });
 
 export { mixinStyle };

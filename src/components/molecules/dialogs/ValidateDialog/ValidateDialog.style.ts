@@ -1,4 +1,5 @@
 import { Platform, StyleSheet } from 'react-native';
+import { mixinStyle } from 'styles/mixinStyle';
 
 export const validateDialogStyles = StyleSheet.create({
   centeredView: {
@@ -8,32 +9,7 @@ export const validateDialogStyles = StyleSheet.create({
     marginTop:22,
   },
   modalView: {
-    margin: 20,
-    backgroundColor: 'white',
-    borderRadius: 20,
-    padding: 35,
-    alignItems: 'center',
-    ...Platform.select({
-      ios: {
-        shadowOffset: {
-          width: 0,
-          height:2
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-      },
-      android: {
-        elevation: 10,
-      },
-      web: {
-        shadowOffset: {
-          width: 0,
-          height:2
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-      },
-    })
+    ...mixinStyle.dialog
   },
   openButton: {
     backgroundColor: '#f194ff',

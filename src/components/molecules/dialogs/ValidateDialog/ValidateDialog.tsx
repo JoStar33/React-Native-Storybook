@@ -6,6 +6,7 @@ interface Props {
   dialogText: string;
   handleDialog: () => void;
 }
+
 const ValidateDialog = ({ dialogShow, dialogText, handleDialog }: Props) => {
   return (
     <Modal
