@@ -9,12 +9,12 @@ export const sideMenu: SideMenu[] = [
     name: "홈으로",
     component: BottomTabNavigator,
     navigate: DrawerMenus.DrawerHome,
-    icon: <FontAwesomeIcon name="home" />,
+    icon: <FontAwesomeIcon size={20} name="home" />,
   },
   {
     name: "공지사항 확인하기",
     component: NotificationScreen,
     navigate: DrawerMenus.NotificationScreen,
-    icon: <FontAwesomeIcon name="envelope-square" />,
+    icon: <FontAwesomeIcon size={20} name="envelope-square" />,
   },
 ]
