@@ -5,7 +5,7 @@ enum Menus {
   Movies = "Movies",
   Profile = "Profile",
   DragableList = "DragableList",
-  Home = "Home"
+  MainScreen = "MainScreen"
 }
 
 export { Menus };
