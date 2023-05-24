@@ -1,13 +1,13 @@
 import { createStackNavigator } from "@react-navigation/stack";
+import { stackMenu } from "datas/menus";
 import DrawerNavigator from "routers/DrawerNavigator";
-import MovieDetailScreen from "screens/MovieDetailScreen/MovieDetailScreen";
 const Stack = createStackNavigator();
 
 const MainScreen = () => {
   return (
     <Stack.Navigator
       screenOptions={{
-        headerShown: false
+        headerShown: false,
       }}
       // screenOptions={{
       //   headerTitleAlign: "center",
@@ -30,8 +30,10 @@ const MainScreen = () => {
     >
       {/* 사이드 네비게이터 */}
       <Stack.Screen name="드로워" component={DrawerNavigator} />
-      {/* 일반 네비게이터 */}
-      <Stack.Screen name="MovieDetailScreen" component={MovieDetailScreen} />
+      {/* 아래부터는 일반 네비게이터 */}
+      {stackMenu.map((menu, _id) => (
+        <Stack.Screen key={_id} name={menu.name} component={menu.component} />
+      ))}
     </Stack.Navigator>
   );
 };

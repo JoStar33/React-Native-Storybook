@@ -1,12 +1,19 @@
-enum Menus {
-  MovieDetailScreen = "MovieDetailScreen",
+enum BottomMenus {
   SwipeList = "SwipeList",
   MovieRowList = "MovieRowList",
-  Movies = "Movies",
-  Profile = "Profile",
+  MovieList = "MovieList",
   DragableList = "DragableList",
-  MainScreen = "MainScreen"
+  Home = "Home"
+};
+
+enum DrawerMenus {
+  DrawerHome = "DrawerHome",
+  NotificationScreen = "NotificationScreen"
 }
 
-export { Menus };
+enum StackMenus {
+  MovieDetailScreen = "MovieDetailScreen",
+};
+
+export { BottomMenus, StackMenus, DrawerMenus };
 
