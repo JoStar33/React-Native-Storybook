@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { View, Image } from 'react-native';
-import { signScreenStyles } from './SignScreen.style';
-import SignDialog from 'components/molecules/dialogs/SignDialog/SignDialog';
 import ColorButton from 'components/atoms/buttons/ColorButton/ColorButton';
+import SignDialog from 'components/molecules/dialogs/SignDialog/SignDialog';
+import { useState } from 'react';
+import { Image, View } from 'react-native';
+import { signScreenStyles } from './SignScreen.style';
 
 const SignScreen = () => {
   const [dialogShow, setDialogShow] = useState<boolean>(false);
@@ -14,7 +14,6 @@ const SignScreen = () => {
     setDialogShow(true);
   }
   const handleGetImage = (image: string) => {
-    console.log(image)
     setImage(image);
   }
   return (
