@@ -59,6 +59,9 @@
 
 - yarn add react-native-signature-canvas react-native-webview rn-fetch-blob
   - 리액트 네이티브 싸인기능 구현 라이브러리
+
+- yarn add react-native-url-polyfill AND yarn add msw --dev
+  - 리액트 네이티브 환경에서 msw를 동작시키기 위한 라이브러리. 부가적인 셋팅 설명이 필요한데, 이는 mocks폴더에서 확인바람.
 ## 스타일드 컴포넌트를 손절친 이유 
 스타일드 컴포넌트를 사용하다가 뜯어냈다. 이유는 스타일드 컴포넌트를 사용하면 스타일 호환이 제대로 이루어지지 않으며 styleSheet를 사용했을때도 스타일드 컴포넌트처럼 css in js의 형태로 코드를 짜는게 가능하다는 점이다. 물론 컴포넌트 네이밍을 못한다는 점은 아쉽지만 호환을 설정하는 과정이 너무 까다롭기에 손절을 결정.
 

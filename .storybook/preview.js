@@ -3,6 +3,11 @@ import { useEffect } from "react";
 import { QueryClient, QueryClientProvider } from "react-query";
 const queryClient = new QueryClient();
 
+const worker = setupWorker(
+...handlers
+);
+worker.start();
+
 export const decorators = [(Story) => {
   useEffect(() => {
     const iconFontStyles = `@font-face {
