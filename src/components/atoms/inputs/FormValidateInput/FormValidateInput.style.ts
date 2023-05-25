@@ -4,7 +4,7 @@ import { mixinStyle } from "styles/mixinStyle";
 
 export const formValidateInputStyles = StyleSheet.create({
   inputContainer: {
-    margin: 2,
+    margin: 7,
     width: vw(70)
   },
   input: {
