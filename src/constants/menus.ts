@@ -9,12 +9,13 @@ enum BottomMenus {
 enum DrawerMenus {
   DrawerHome = "DrawerHome",
   NotificationScreen = "NotificationScreen",
-  SignScreen = "SignScreen"
+  SignScreen = "SignScreen",
+  CameraScreen = "CameraScreen"
 }
 
 enum StackMenus {
   DrawerNavigator = "DrawerNavigator",
-  MovieDetailScreen = "MovieDetailScreen",
+  MovieDetailScreen = "MovieDetailScreen"
 };
 
 export { BottomMenus, StackMenus, DrawerMenus };

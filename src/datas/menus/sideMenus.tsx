@@ -1,6 +1,7 @@
 import { DrawerMenus } from "constants/menus";
 import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 import BottomTabNavigator from "routers/BottomTabNavigator";
+import CameraScreen from "screens/CameraScreen";
 import NotificationScreen from "screens/NotificationScreen";
 import SignScreen from "screens/SignScreen/SignScreen";
 import { SideMenu } from "types/apps/menu";
@@ -23,5 +24,11 @@ export const sideMenu: SideMenu[] = [
     component: SignScreen,
     navigate: DrawerMenus.SignScreen,
     icon: <FontAwesomeIcon size={20} name="pencil" />,
+  },
+    {
+    name: "카메라 사용해보기",
+    component: CameraScreen,
+    navigate: DrawerMenus.CameraScreen,
+    icon: <FontAwesomeIcon size={20} name="photo" />,
   },
 ]
