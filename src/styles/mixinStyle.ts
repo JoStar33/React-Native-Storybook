@@ -71,6 +71,29 @@ const mixinStyle = StyleSheet.create({
         shadowRadius: 3.84,
       },
     })
+  },
+  mixinShadow: {
+    ...Platform.select({
+      ios: {
+        shadowOffset: {
+          width: 0,
+          height:2
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+      },
+      android: {
+        elevation: 10,
+      },
+      web: {
+        shadowOffset: {
+          width: 0,
+          height:2
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+      },
+    })
   }
 });
 
