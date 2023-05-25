@@ -20,3 +20,11 @@ if (process.env.NODE_ENV === "development") {
 }
 ```
 다음과 같이 구성시키면 모든 설정이 끝났고, msw를 애뮬레이터 환경에서도 정상적으로 사용가능하다.
+
+
+## 참고문서
+
+https://github.com/JBudny/react-native-rtkq-testing-with-msw
+
+https://mswjs.io/docs/faq
+
