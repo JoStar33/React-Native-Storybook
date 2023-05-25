@@ -11,5 +11,6 @@ export const multiValidateFormStyles = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 2,
     borderColor: "black",
+    backgroundColor: "white"
   },
 });
