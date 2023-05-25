@@ -1,9 +1,11 @@
 import MultiValidateForm from "components/molecules/forms/MultiValidateForm/MultiValidateForm";
-import { Text, View } from "react-native";
+import { useLoginMutation } from "hooks/auth/useLoginMutation";
+import { View } from "react-native";
 import { SubmitValue } from "types/apps/form";
 import { validateEmail, validatePassword } from "utils/validate";
 
 const MainScreen = () => {
+  const { mutate } = useLoginMutation();
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
       <MultiValidateForm
@@ -33,8 +35,11 @@ const MainScreen = () => {
               "비밀번호는 특수문자, 영문 대소문자, 숫자가 포함된 9자~16자로 입력해주세요.",
           },
         ]}
-        actionSubmit={function (data: SubmitValue): void {
-          throw new Error("Function not implemented.");
+        actionSubmit={(data: SubmitValue) => {
+          mutate({
+            email: data.email,
+            password: data.password
+          });
         }}
         buttonText={"로그인"}
       />
