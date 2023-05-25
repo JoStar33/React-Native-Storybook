@@ -45,7 +45,7 @@
 - yarn add react-hook-form @hookform/resolvers
   - 리액트 훅 폼을 활용하기 위해 필요한 라이브러리들.
 
-- yarn add react-native-draggable-flatlist react-native-reanimated
+- yarn add react-native-draggable-flatlist react-native-reanimated@2.15.0
   - 리액트 네이티브 환경에서 드래그가 가능하도록 하는 라이브러리.
 
 - yarn add @react-navigation/material-bottom-tabs react-native-paper
