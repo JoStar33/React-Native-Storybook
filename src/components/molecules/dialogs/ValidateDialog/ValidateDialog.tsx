@@ -1,4 +1,5 @@
-import { Modal, Text, TouchableHighlight, View } from "react-native";
+import ColorButton from "components/atoms/buttons/ColorButton/ColorButton";
+import { Modal, Text, View } from "react-native";
 import { validateDialogStyles } from "./ValidateDialog.style";
 
 interface Props {
@@ -18,18 +19,14 @@ const ValidateDialog = ({ dialogShow, dialogText, handleDialog }: Props) => {
       <View style={validateDialogStyles.centeredView}>
         <View style={validateDialogStyles.modalView}>
           <Text style={validateDialogStyles.modalText}>{dialogText}</Text>
-          <TouchableHighlight
+          <ColorButton
             //styles.openButton을 복사한뒤 새로운 값 backgroundColor 추가
-            style={{
-              ...validateDialogStyles.openButton,
-              backgroundColor: "#2196F3",
-            }}
-            onPress={() => {
+            color="#2196F3"
+            handleClick={() => {
               handleDialog();
             }}
-          >
-            <Text style={validateDialogStyles.textStyle}>닫기</Text>
-          </TouchableHighlight>
+            label="닫기"
+          />
         </View>
       </View>
     </Modal>

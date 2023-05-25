@@ -1,4 +1,5 @@
-import { Modal, Text, TouchableHighlight, View } from "react-native";
+import ColorButton from "components/atoms/buttons/ColorButton/ColorButton";
+import { Modal, Text, View } from "react-native";
 import AntDesignIcon from "react-native-vector-icons/AntDesign";
 import { successDialogStyles } from "./SuccessDialog.style";
 interface Props {
@@ -18,18 +19,14 @@ const SuccessDialog = ({ dialogShow, dialogText, handleDialog }: Props) => {
         <View style={successDialogStyles.modalView}>
           <AntDesignIcon name="checkcircle" color={"#7ee287"} size={50}/>
           <Text style={successDialogStyles.modalText}>{dialogText}</Text>
-          <TouchableHighlight
+          <ColorButton
             //styles.openButton을 복사한뒤 새로운 값 backgroundColor 추가
-            style={{
-              ...successDialogStyles.openButton,
-              backgroundColor: "#7ee287",
-            }}
-            onPress={() => {
+            color="#7ee287"
+            handleClick={() => {
               handleDialog();
             }}
-          >
-            <Text style={successDialogStyles.textStyle}>닫기</Text>
-          </TouchableHighlight>
+            label="닫기"
+          />
         </View>
       </View>
     </Modal>

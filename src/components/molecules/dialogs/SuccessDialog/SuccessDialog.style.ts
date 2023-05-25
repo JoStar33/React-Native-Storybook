@@ -11,15 +11,6 @@ export const successDialogStyles = StyleSheet.create({
   modalView: {
     ...mixinStyle.dialog,
   },
-  openButton: {
-    borderRadius: 20,
-    padding: 10,
-  },
-  textStyle: {
-    color: "white",
-    fontWeight: "bold",
-    textAlign: "center",
-  },
   modalText: {
     color: "black",
     marginBottom: 15,

@@ -45,11 +45,11 @@ const mixinStyle = StyleSheet.create({
     fontWeight: "800",
   },
   dialog: {
-    margin: 20,
-    backgroundColor: 'white',
+    margin: 0,
     borderRadius: 20,
     padding: 35,
     alignItems: 'center',
+    backgroundColor: "white",
     ...Platform.select({
       ios: {
         shadowOffset: {

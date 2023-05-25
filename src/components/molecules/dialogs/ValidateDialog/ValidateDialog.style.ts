@@ -1,4 +1,4 @@
-import { Platform, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { mixinStyle } from 'styles/mixinStyle';
 
 export const validateDialogStyles = StyleSheet.create({
@@ -10,16 +10,6 @@ export const validateDialogStyles = StyleSheet.create({
   },
   modalView: {
     ...mixinStyle.dialog
-  },
-  openButton: {
-    backgroundColor: '#f194ff',
-    borderRadius: 20,
-    padding: 10,
-  },
-  textStyle: {
-    color: 'white',
-    fontWeight: 'bold',
-    textAlign: 'center',
   },
   modalText: {
     marginBottom: 15,
