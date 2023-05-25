@@ -1,5 +1,4 @@
-import { View } from "react-native";
-import { Avatar, Caption, Paragraph, Title } from "react-native-paper";
+import { Image, Text, View } from "react-native";
 import { UserCardInfo } from "types/apps/card";
 import { userCardStyles } from "./UserCard.style";
 
@@ -12,34 +11,30 @@ const UserCard = ({ userInfo }: Props) => {
     <>
       <View style={userCardStyles.userInfoSection}>
         <View style={{ flexDirection: "row", marginTop: 15 }}>
-          <Avatar.Image
+          <Image
+            style={userCardStyles.profileImage}
             source={{
-              uri: userInfo.profile_img
+              uri: userInfo.profile_img,
             }}
-            size={50}
           />
           <View style={{ marginLeft: 15, flexDirection: "column" }}>
-            <Title style={userCardStyles.title}>{userInfo.name}</Title>
-            <Caption style={userCardStyles.caption}>{userInfo.sns_id}</Caption>
+            <Text style={userCardStyles.title}>{userInfo.name}</Text>
+            <Text style={userCardStyles.caption}>{userInfo.sns_id}</Text>
           </View>
         </View>
 
         <View style={userCardStyles.row}>
           <View style={userCardStyles.section}>
-            <Paragraph style={[userCardStyles.paragraph, userCardStyles.caption]}>
-              {
-                userInfo.following
-              }
-            </Paragraph>
-            <Caption style={userCardStyles.caption}>Following</Caption>
+            <Text style={[userCardStyles.paragraph, userCardStyles.caption]}>
+              {userInfo.following}
+            </Text>
+            <Text style={userCardStyles.caption}>Following</Text>
           </View>
           <View style={userCardStyles.section}>
-            <Paragraph style={[userCardStyles.paragraph, userCardStyles.caption]}>
-              {
-                userInfo.follower
-              }
-            </Paragraph>
-            <Caption style={userCardStyles.caption}>Followers</Caption>
+            <Text style={[userCardStyles.paragraph, userCardStyles.caption]}>
+              {userInfo.follower}
+            </Text>
+            <Text style={userCardStyles.caption}>Followers</Text>
           </View>
         </View>
       </View>
