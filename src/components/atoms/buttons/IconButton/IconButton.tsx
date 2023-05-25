@@ -1,18 +1,18 @@
 import { Text, TouchableOpacity } from "react-native";
-import Icon from "react-native-vector-icons/FontAwesome";
 import { iconButtonStyles } from "./IconButton.style";
 
 interface Props {
-  color: string;
-  iconName: string;
+  icon: React.ReactElement;
   label: string;
   handleClick: () => void;
 }
 
-const IconButton = ({ color, iconName, label, handleClick }: Props) => {
+const IconButton = ({ label, icon, handleClick }: Props) => {
   return (
     <TouchableOpacity onPress={handleClick} style={iconButtonStyles.container}>
-      <Icon name={iconName} size={30} color={color} />
+      {
+        icon
+      }
       <Text>{label}</Text>
     </TouchableOpacity>
   );

@@ -1,6 +1,6 @@
 // stories/Button.stories.tsx
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-
+import FontAwesomeIcon from "react-native-vector-icons/FontAwesome";
 import IconButton from "./IconButton";
 
 export default {
@@ -13,8 +13,7 @@ export const IconButtonTest: ComponentStory<typeof IconButton> = (args) => (
 );
 
 IconButtonTest.args = {
-  color: "black",
-  iconName: "rocket",
+  icon: <FontAwesomeIcon name="rocket" size={30}/>,
   label: "테스트 버튼",
   handleClick: () => {},
 };
