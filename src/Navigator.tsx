@@ -2,7 +2,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { stackMenu } from "datas/menus/stackMenus";
 const Stack = createStackNavigator();
 
-const MainScreen = () => {
+const Navigator = () => {
   return (
     <Stack.Navigator
       screenOptions={{
@@ -17,4 +17,4 @@ const MainScreen = () => {
   );
 };
 
-export default MainScreen;
+export default Navigator;
