@@ -48,7 +48,7 @@
 - yarn add react-native-draggable-flatlist react-native-reanimated@2.15.0
   - 리액트 네이티브 환경에서 드래그가 가능하도록 하는 라이브러리.
 
-- yarn add @react-navigation/material-bottom-tabs react-native-paper
+- yarn add @react-navigation/material-bottom-tabs react-native-paper react-native-pager-view react-native-safe-area-context react-native-tab-view @react-navigation/native
   - 리액트 네이티브 하단 메뉴바 사용을 위해 설치한 라이브러리.
 
 - yarn add @react-navigation/drawer
