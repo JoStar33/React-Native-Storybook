@@ -1,5 +1,5 @@
 import { NavigationProp, useNavigation } from "@react-navigation/native";
-import { Menus } from "constants/menus";
+import { StackMenus } from "constants/menus";
 import { Image, Text, TouchableOpacity } from "react-native";
 import { Movie } from "types/movie";
 import { movieCardStyles } from "./MovieCard.style";
@@ -15,7 +15,7 @@ type RootParamList = {
 const MovieCard = ({ item }: Props) => {
   const navigation = useNavigation<NavigationProp<RootParamList>>();
   const handleClick = () => {
-    navigation.navigate(Menus.MovieDetailScreen, {
+    navigation.navigate(StackMenus.MovieDetailScreen, {
       movie: item
     });
   };
