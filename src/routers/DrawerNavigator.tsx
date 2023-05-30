@@ -1,4 +1,5 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import Header from "components/layouts/header/Header";
 import SideBar from "components/layouts/sidebar/SideBar";
 import { sideMenu } from "datas/menus/sideMenus";
 import { userInfo } from "datas/users";
@@ -9,7 +10,7 @@ const DrawerNavigator = () => {
   return (
     <Drawer.Navigator
       screenOptions={{
-        headerTitleAlign: "center"
+        header: () => <Header/>,
       }}
       drawerContent={(props) => (
         <SideBar
