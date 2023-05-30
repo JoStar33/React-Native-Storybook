@@ -6,6 +6,8 @@ import FeatherIcon from "react-native-vector-icons/Feather";
 import { useNavigation, DrawerActions, NavigationProp } from "@react-navigation/native";
 import { BottomMenus } from "constants/menus";
 
+//Navigation Props로 넘길 값이 존재하지않고 단순하게 화면만 넘어갈 생각이면 아래와 같이 작성.
+//이렇게 작성해야만 네비게이션 never타입 에러가 발생하지 않음.
 export type RootStackParamList = {
   Home: undefined;
 };
